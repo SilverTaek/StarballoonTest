@@ -2,54 +2,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <title>별풍력 테스트</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc67adc63d4c6b8"></script>
+  <!-- Required meta tags -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
 </head>
 
 <body>
-  <!-- navbar -->
-  <section id="navbar">
-    <div class="navbar__logo"></div>
-    <div class="navbar__menu"></div>
+  <div class="container">
+    <!-- navbar -->
+    <br><br>
+    <h1>별풍력 테스트</h1>
+    <h3>인공지능이 말해주는 내 별풍력</h3>
 
-  </section>
-  <div class="file-upload">
-    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
-      Image</button>
 
-    <div class="image-upload-wrap">
-      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-      <div class="drag-text">
-        <h3>Drag and drop a file or select add Image</h3>
+    <!-- Content -->
+    <section id="Content" class="section section__container">
+      <div class="file-upload">
+        <!-- <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
+      Image</button> -->
+
+        <div class="image-upload-wrap">
+          <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+
+          <div class="drag-text">
+
+            <h2> (사진 첨부)</h2>
+            <h3>당신의 별풍력을 테스트해보세요!</h3>
+          </div>
+        </div>
+        <div class="file-upload-content">
+          <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+
+
+
+
+        </div>
+
       </div>
-    </div>
-    <div class="file-upload-content">
-      <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+
       <p class="result-message"></p>
       <div id="label-container"></div>
-      <div class="image-title-wrap">
-        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded
-            Image</span></button>
-      </div>
+    </section>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="addthis_inline_share_toolbox"></div>
 
-    </div>
 
+
+
+
+    <div id="disqus_thread"></div>
   </div>
 
-  <!-- Go to www.addthis.com/dashboard to customize your tools -->
-  <div class="addthis_inline_share_toolbox"></div>
 
 
-
-
-
-  <div id="disqus_thread"></div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
   <script>
 
     (function () {
@@ -112,7 +140,7 @@
       $('.result-message').html(resultMessage);
       for (let i = 0; i < maxPredictions; i++) {
         const classPrediction =
-          prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+          prediction[i].className + ": " + prediction[i].probability.toFixed(2) * 100 + "%";
         labelContainer.childNodes[i].innerHTML = classPrediction;
       }
     }

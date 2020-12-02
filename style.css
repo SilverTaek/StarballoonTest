@@ -1,32 +1,16 @@
-body {
-  font-family: sans-serif;
-  background-color: #eeeeee;
-}
 
 .file-upload {
-  background-color: #ffffff;
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  background:url('images/star.jpeg') center/cover no-repeat;
+  
+  height: 50vw;
+  margin: auto;
+  padding: 300px;
 }
 
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #1FB264;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #15824B;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+
 
 .file-upload-btn:hover {
-  background: #1AA059;
+  background: #707c76;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -55,14 +39,14 @@ body {
 
 .image-upload-wrap {
   margin-top: 20px;
-  border: 4px dashed #1FB264;
   position: relative;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-  background-color: #1FB264;
-  border: 4px dashed #ffffff;
+  background-color: var(--color-dark-white);
+  opacity: 0.5;
+  
 }
 
 .image-title-wrap {
@@ -70,16 +54,18 @@ body {
   color: #222;
 }
 
-.drag-text {
-  text-align: center;
+i{
+  font-size: 100px;
+  font-size: black;
 }
 
-.drag-text h3 {
-  font-weight: 100;
-  text-transform: uppercase;
-  color: #15824B;
-  padding: 60px 0;
+.drag-text h2,h3{
+  text-align: center;
+  color: var(--color-blue);
 }
+
+
+
 
 .file-upload-image {
   max-height: 200px;
@@ -92,11 +78,11 @@ body {
   width: 200px;
   margin: 0;
   color: #fff;
-  background: #cd4535;
+  background: #ffc451;
   border: none;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 4px solid #b02818;
+  border-bottom: 4px solid #ffc451;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -104,7 +90,7 @@ body {
 }
 
 .remove-image:hover {
-  background: #c13b2a;
+  background: #ffc451;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -112,5 +98,27 @@ body {
 
 .remove-image:active {
   border: 0;
-  transition: all .2s ease;
+  transition: all .2s ease-in;
+}
+
+.label-container img{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+}
+
+.nav-distance{
+  padding: 2.1% 7.7%;
+}
+
+.navbar-brand{
+  font-family: NanumSquareR;
+  line-height: 1.68;
+  text-align: center;
+  
+}
+
+h1{
+  margin: auto;
+  text-align: center;
 }
