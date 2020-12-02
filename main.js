@@ -13,6 +13,9 @@ function readURL(input) {
     };
 
     reader.readAsDataURL(input.files[0]);
+    init().then(() => {
+      predict();
+    })
 
   } else {
     removeUpload();
