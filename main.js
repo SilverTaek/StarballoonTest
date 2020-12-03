@@ -21,6 +21,7 @@ function readURL(input) {
       $('.image-title-wrap').show();
 
       $('.main').show();
+      $('.Content__gender').hide();
     });
 
 
@@ -51,6 +52,9 @@ function gender() {
     girl.style.display = "none"
     boy.style.display = 'block'
     $("h1").css("color", "#73aace");
+    $(".container").css("color", "#73aace");
+    $(".file-upload").css("border-color", "#73aace")
+
 
   } else if (gender1.style.display == 'none' && boy.style.display == 'block') {
     gender2.style.display = 'none'
@@ -58,6 +62,8 @@ function gender() {
     girl.style.display = "block"
     boy.style.display = 'none'
     $("h1").css("color", "#fe918d");
+    $(".container").css("color", "#fe918d");
+    $(".file-upload").css("border-color", "#fe918d")
   }
 
 }

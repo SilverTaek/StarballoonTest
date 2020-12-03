@@ -31,43 +31,47 @@
   --animation-duration: 300ms;
 }
 body {
-  font-family: S-CoreDream-3Light,"Open Sans", sans-serif;
+  font-family: 'Yeon Sung', cursive;
   background-color: #eeeeee;
 }
 
+#label-container{
+  font-size: var(--font-small);
+  color: var(--color-light-grey);
+  margin-left: auto;
+}
 /* navbar */
 #navbar{
   margin: 0px 0px;
-  padding: 8px;
+  padding:30px 0 0 0;
   text-align: center;
 }
-.navbar__title__logo{
-  font-size: var(--font-large);
+.navbar__title__logo h1{
+  font-size: 50px;
   display: inline;
-  padding: 0px;
+  
 }
 
 .navbar__title h2{
-  font-size: var(--font-medium);
+  font-size: 20px;
 }
 
 .file-upload {
-  background:url('images/star.jpeg');
-  width: 20vw;
+  border: 15px solid var(--color-dark-pink);
+   width: 20vw;
   height: 25vw;
   margin: 0 auto;
   padding: 20px;
-  opacity: 0.5;
+  opacity: 0.8;
+  background-color: #FFFEEf;
 }
 
-
-
-
-.file-upload-btn:hover {
-  background: #1AA059;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
+.file-upload-image{
+  max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+    background-size: cover;
 }
 
 .file-upload-btn:active {
@@ -79,9 +83,13 @@ body {
   display: none;
   text-align: center;
 }
+.file-upload-content img{
+  vertical-align: middle;
+}
 
 .file-upload-input {
   position: absolute;
+  text-align: center;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -89,17 +97,26 @@ body {
   outline: none;
   opacity: 0;
   cursor: pointer;
-  transform: translateY(-10%);
+  /* transform: translateY(-10%); */
+
+  
   
 }
 
+
 .image-upload-wrap {
-  margin-top: -1%;
-  border: 1px dashed var(--color-pink);
   position: relative;
-  width: 20vw;
-  height: 25vw;
+  width: 100%;
+  height: 100%;
+  
+  
 }
+
+/* position: relative;
+    height: 80%;
+    width: 80%;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100% ), url(../images/woman.png);
+    background-size: cover; */
 
 .image-dropping,
 .image-upload-wrap:hover {
@@ -119,10 +136,15 @@ border: 1px dashed #ffffff;
 }
 
 .drag-text {
-  text-align: center;
-  margin-top: 30%;
-  font-size: var(--font-medium);
-  color: var(--color-light-white);
+  
+  color: #ffc451;
+  height: 100%;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
 }
 
 
@@ -160,7 +182,7 @@ border: 1px dashed #ffffff;
   transition: all .2s ease;
   cursor: pointer;
 }
-#
+
 
 .remove-image:active {
   border: 0;
@@ -168,11 +190,12 @@ border: 1px dashed #ffffff;
 }
 
 .container{
- text-align: center;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+text-align: center;
+margin: 0;
+justify-content: center;
+align-items: center;
+color: var(--color-pink);
+font-weight: var(--font-medium);
 }
 
 .main{
@@ -286,7 +309,7 @@ input[type="checkbox"].switch_1{
   }
 
   input[type="checkbox"].switch_1{
-    font-size: 10px;
+    font-size: 20px;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -326,11 +349,74 @@ input[type="checkbox"].switch_1{
     }
     
   /* Switch 1 Specific Style End */
-  .result-message{
+  .result-message1{
     font-size: var(--font-medium);
     color: var(--color-dark-pink);
   }
+  .result-message2{
+    font-size: var(--font-medium);
+    color: var(--color-orange);
+  }
+  .result-message3{
+    font-size: var(--font-medium);
+    color: var(--color-blue);
+  }
+  .result-message4{
+    font-size: var(--font-medium);
+    color: darkblue;
+  }
+  .result-message5{
+    font-size: var(--font-medium);
+    color: red;
+  }
+  .result-detail{
+    font-size: 19px;
+    color: #5F0000;
+  }
   .result-detail{
     font-size: small;
+  }
+
+  .file-upload {
+    
+    width: 50vw;
+    height: 55vw;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 0.5;
+  }
+  .file-upload-image {
+    max-height: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    
+    margin: auto;
+    
+    margin-top: 10%;
+  }
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+    
+    
+  }
+  .image-upload-wrap {
+    margin-top: -1%;
+    border: 1px dashed var(--color-pink);
+    position: relative;
+    width: 50vw;
+    height: 55vw;
+  }
+  .drag-text {
+    text-align: center;
+    font-size: var(--font-micro);
+    color: var(--color-orange);
   }
 }
