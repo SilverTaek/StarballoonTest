@@ -50,12 +50,14 @@ function gender() {
     gender1.style.display = "none"
     girl.style.display = "none"
     boy.style.display = 'block'
-    const URL = "";
+    $("h1").css("color", "#73aace");
+
   } else if (gender1.style.display == 'none' && boy.style.display == 'block') {
     gender2.style.display = 'none'
     gender1.style.display = 'block'
     girl.style.display = "block"
     boy.style.display = 'none'
+    $("h1").css("color", "#fe918d");
   }
 
 }
