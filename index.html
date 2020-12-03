@@ -84,7 +84,7 @@
     <div class="result-detail"></div>
     <div id="label-container"></div>
     <div class="image-title-wrap" style="display: none;">
-      <button type="button" onclick="removeUpload()" class="remove-image">다시 해보기</button>
+      <button type="button" onclick="removeUpload()" class="remove-image">다른 사진으로 재시도</button>
     </div>
   </div>
   <div id="disqus_thread"></div>
@@ -156,29 +156,29 @@
       var resultMessageSub;
       switch (prediction[0].className) {
         case "월1억":
-          resultMessage1 = "축하합니다!! 당신은 한달에 100만개의 별풍선을 받을 수 있습니다.(1억!)"
-          resultMessageSub = "(지금 당장 도전하세요!)"
-          resultDetail = "나와 같은 별풍력을 가진 BJ : 엘린, 박가린, 커멘더지코, 금화 등"
+          resultMessage1 = "Wow 천상계!! 축하합니다!!"
+          resultMessageSub = "(당신은 한달에 100만개의 별풍선을 받을 수 있습니다.(월1억이상))"
+          resultDetail = "나와 같은 별풍력을 가진 BJ : 크레용팝엘린, 박가린, 커멘더지코, 금화, 세야, 화정 등"
           break;
         case "월5천":
-          resultMessage2 = "당신은 한달에 50만개 이상의 별풍선을 받을 수 있습니다.(5천만원!)"
-          resultMessageSub = "(지금도 늦지 않았습니다)"
-          resultDetail = "나와 같은 별풍력을 가진 BJ : 문월, 재희, 쁠리, 팡이, 아윤, 김시원 등"
+          resultMessage2 = "축하합니다 당신은 왕족입니다!"
+          resultMessageSub = "(한달에 50만개 이상의 별풍선을 받을 수 있습니다.(5천만원!))"
+          resultDetail = "나와 같은 별풍력을 가진 BJ : 케이, 아윤, 남순, 김인호, 뜨뜨뜨뜨, 나는푸르, 염보성 등"
           break;
         case "월3천":
-          resultMessage3 = "당신은 한달에 30만개 이상의 별풍선을 받을 수 있습니다.(3천만원!)"
-          resultMessageSub = "(도전하세요!)"
-          resultDetail = "나와 같은 별풍력을 가진 BJ : 와꾸대장봉준, 도아, 최군 등"
+          resultMessage3 = "당신은 귀족계층입니다!"
+          resultMessageSub = "(한달에 30만개 이상의 별풍선을 받을 수 있습니다.(3천만원!))"
+          resultDetail = "나와 같은 별풍력을 가진 BJ : 최군, 마이민, 타미미, 감스트, 오메킴, 랄랄, 영민 등"
           break;
         case "월천":
-          resultMessage4 = "당신은 한달에 10만개 이상의 별풍선을 받을 수 있습니다."
-          resultMessageSub = "(먹고 사는데 이정도면 충분하죠?)"
-          resultDetail = "나와 같은 별풍력을 가진 BJ : 오메킴, 파퀴, 코트, 짭구, 에디린 등"
+          resultMessage4 = "당신은 지방귀족입니다."
+          resultMessageSub = "(한달에 10만개 이상의 별풍선을 받을 수 있습니다.(천만원!))"
+          resultDetail = "나와 같은 별풍력을 가진 BJ : 철구, 대륙남, 기뉴다, 주보리, 김아인, 신나린 등"
           break;
         case "천이하":
-          resultMessage5 = "당신은 일반인 입니다. 지금 하던일에 집중하세요!"
-          resultMessageSub = "(응원합니다)"
-          resultDetail = "나와 같은 별풍력을 가진 BJ : 탱글다희, 유혜디, 로이조, 까루 등 "
+          resultMessage5 = "당신은 평민계층 입니다."
+          resultMessageSub = "(지금 하는일에 집중하세요!)"
+          resultDetail = "나와 같은 별풍력을 가진 BJ : 탱글다희, 유혜디, 로이조, 까루, 이채이 등 "
           break;
       }
       if (prediction[0].className == '월1억') {
