@@ -294,6 +294,10 @@ input[type="checkbox"].switch_1{
 	left: calc(100% - 1.5em);
   }
 
+  .ad-banner{
+    width: 320px;
+    margin: 0 auto;
+  }
 	
 /* Switch 1 Specific Style End */
 
