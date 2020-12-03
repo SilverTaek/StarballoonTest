@@ -10,6 +10,9 @@
   <link rel="icon" type="image/png" href="images/balloon.png" />
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc67adc63d4c6b8"></script>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
   <title>별풍력 테스트</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
@@ -84,10 +87,17 @@
     <div class="result-detail"></div>
     <div id="label-container"></div>
     <div class="image-title-wrap" style="display: none;">
+
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div class="addthis_inline_share_toolbox_o5yb"></div>
+
       <button type="button" onclick="removeUpload()" class="remove-image">다른 사진으로 재시도</button>
     </div>
   </div>
   <div id="disqus_thread"></div>
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-oBH7mwF8oCTQRkJZ" data-ad-width="320"
+    data-ad-height="100"></ins>
+
   <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -117,7 +127,7 @@
 
     // the link to your model provided by Teachable Machine export panel
 
-    const URL = "https://teachablemachine.withgoogle.com/models/RUAmcQEsS/";
+    const URL = "https://teachablemachine.withgoogle.com/models/r7vl302s4/";
 
 
 
@@ -155,50 +165,50 @@
       var resultDetail;
       var resultMessageSub;
       switch (prediction[0].className) {
-        case "월1억":
+        case "천상계":
           resultMessage1 = "Wow 천상계!! 축하합니다!!"
           resultMessageSub = "(당신은 한달에 100만개의 별풍선을 받을 수 있습니다.(월1억이상))"
           resultDetail = "나와 같은 별풍력을 가진 BJ : 크레용팝엘린, 박가린, 커멘더지코, 금화, 세야, 화정 등"
           break;
-        case "월5천":
+        case "왕족":
           resultMessage2 = "축하합니다 당신은 왕족입니다!"
           resultMessageSub = "(한달에 50만개 이상의 별풍선을 받을 수 있습니다.(5천만원!))"
           resultDetail = "나와 같은 별풍력을 가진 BJ : 케이, 아윤, 남순, 김인호, 뜨뜨뜨뜨, 나는푸르, 염보성 등"
           break;
-        case "월3천":
+        case "귀족":
           resultMessage3 = "당신은 귀족계층입니다!"
           resultMessageSub = "(한달에 30만개 이상의 별풍선을 받을 수 있습니다.(3천만원!))"
           resultDetail = "나와 같은 별풍력을 가진 BJ : 최군, 마이민, 타미미, 감스트, 오메킴, 랄랄, 영민 등"
           break;
-        case "월천":
+        case "지방귀족":
           resultMessage4 = "당신은 지방귀족입니다."
           resultMessageSub = "(한달에 10만개 이상의 별풍선을 받을 수 있습니다.(천만원!))"
           resultDetail = "나와 같은 별풍력을 가진 BJ : 철구, 대륙남, 기뉴다, 주보리, 김아인, 신나린 등"
           break;
-        case "천이하":
+        case "평민":
           resultMessage5 = "당신은 평민계층 입니다."
           resultMessageSub = "(지금 하는일에 집중하세요!)"
           resultDetail = "나와 같은 별풍력을 가진 BJ : 탱글다희, 유혜디, 로이조, 까루, 이채이 등 "
           break;
       }
-      if (prediction[0].className == '월1억') {
+      if (prediction[0].className == '천상계') {
 
         $('.result-message1').html(resultMessage1);
         $('.resultmessagesub').html(resultMessageSub);
         $('.result-detail').html(resultDetail);
-      } else if (prediction[0].className == '월5천') {
+      } else if (prediction[0].className == '왕족') {
         $('.result-message2').html(resultMessage2);
         $('.resultmessagesub').html(resultMessageSub);
         $('.result-detail').html(resultDetail);
-      } else if (prediction[0].className == '월3천') {
+      } else if (prediction[0].className == '귀족') {
         $('.result-message3').html(resultMessage3);
         $('.resultmessagesub').html(resultMessageSub);
         $('.result-detail').html(resultDetail);
-      } else if (prediction[0].className == '월천') {
+      } else if (prediction[0].className == '지방귀족') {
         $('.result-message4').html(resultMessage4);
         $('.resultmessagesub').html(resultMessageSub);
         $('.result-detail').html(resultDetail);
-      } else if (prediction[0].className == '천이하') {
+      } else if (prediction[0].className == '평민') {
         $('.result-message5').html(resultMessage5);
         $('.resultmessagesub').html(resultMessageSub);
         $('.result-detail').html(resultDetail);

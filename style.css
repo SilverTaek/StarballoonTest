@@ -301,7 +301,7 @@ input[type="checkbox"].switch_1{
   :root {
     /* Font size */
     --font-large: 30px;
-    --font-medium: 18px;
+    --font-medium: 22px;
     --font-regular: 16px;
     --font-small: 14px;
     --font-micro: 12px;
