@@ -13,17 +13,29 @@ function readURL(input) {
       // $('.image-title').html(input.files[0].name);
     };
 
+    // var star1 = document.getElementById("rm1").innerText;
+    // var star2 = document.getElementById("rm2").innerText;
+    // var star3 = document.getElementById("rm3").innerText;
+    // var star4 = document.getElementById("rm4").innerText;
+    // var star5 = document.getElementById("rm5").innerText;
+    // console.log(star1)
+    // console.log(star2)
+    // console.log(star3)
+    // console.log(star4)
+    // console.log(star5)
+
+
     reader.readAsDataURL(input.files[0]);
     $('.container').show();
     init().then(() => {
       predict();
       $('.container').hide();
       $('.image-title-wrap').show();
-
+      $('.image').show();
       $('.main').show();
-      $('.Content__gender').hide();
-    });
+      $('.section__gender').hide();
 
+    });
 
   } else {
     removeUpload();

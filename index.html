@@ -19,6 +19,8 @@
   </style>
   <script data-ad-client="pub-7425432426178833" async src="https://pagead2.googlesyndication.com/
   pagead/js/adsbygoogle.js"></script>
+
+
 </head>
 
 <body>
@@ -28,12 +30,13 @@
       <span class="navbar__title__logo">
         <h1 id="logo" style="color:#fe918d;"><i class=" fas fa-star"></i>별풍력 테스트</h1>
       </span>
-      <h2>인공지능이 말해주는 내 별풍력</h2>
+      <h2 id="navbar__sub">인공지능이 말해주는 내 별풍력</h2>
+      <img src="./images/balloon.png" alt="" class="image" style="display: none;">
     </div>
   </nav>
 
   <!-- toogle -->
-  <section id="gender">
+  <section id="gender" class="section__gender">
     <span id="gender1" style="display:block;"> 여 <i class="fas fa-venus"></i></span>
 
     <span id="gender2" style="display:none; "> 남 <i class="fas fa-mars"></i></span>
@@ -80,11 +83,11 @@
   </div>
   <div class="main">
 
-    <div class="result-message1"></div>
-    <div class="result-message2"></div>
-    <div class="result-message3"></div>
-    <div class="result-message4"></div>
-    <div class="result-message5"></div>
+    <div id="rm1" class="result-message1"></div>
+    <div id="rm2" class="result-message2"></div>
+    <div id="rm3" class="result-message3"></div>
+    <div id="rm4" class="result-message4"></div>
+    <div id="rm5" class="result-message5"></div>
     <div class="resultmessagesub"></div>
     <div class="result-detail"></div>
     <div id="label-container"></div>
@@ -158,7 +161,7 @@
 
       labelContainer = document.getElementById("label-container");
       for (let i = 0; i < maxPredictions; i++) { // and class labels
-        labelContainer.appendChild(document.createElement("div"));
+        labelContainer.appendChild(document.createElement("span"));
 
       }
     }
