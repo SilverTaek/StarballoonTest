@@ -1,0 +1,2 @@
+User-agent: *Allow:/
+Sitemap:https://starballoon.netlify.app/sitemap.xml
