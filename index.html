@@ -29,19 +29,45 @@
   </style>
   <script data-ad-client="pub-7425432426178833" async src="https://pagead2.googlesyndication.com/
   pagead/js/adsbygoogle.js"></script>
+  <script type='text/javascript' src='https://www.counter12.com/ad.js?id=WcbdD6d6DzbY38ca'></script>
+  <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    hitCt = eval(cookieVal("pageHit"))
+    hitCt++
+    document.cookie = "pageHit=" + hitCt + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+      thisCookie = document.cookie.split("; ")
+      for (i = 0; i < thisCookie.length; i++) {
+        if (cookieName == thisCookie[i].split("=")[0]) {
+          return thisCookie[i].split("=")[1]
+        }
+      }
+      return 0
+    }
 
 
+  </SCRIPT>
 </head>
 
 <body>
+
   <!-- navbar -->
   <nav id="navbar">
     <div class="navbar__title">
       <span class="navbar__title__logo">
         <h1 id="logo" style="color:#fe918d;"><i class=" fas fa-star"></i>별풍력 테스트</h1>
       </span>
+
       <h2 id="navbar__sub">인공지능이 말해주는 내 별풍력</h2>
-      <img src="./images/balloon.png" alt="" class="image" style="display: none;">
+      <h3 align=center>
+        <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+          document.write("현재까지 <font color=red>" + hitCt + "</font> 명이 별풍력을 측정하셨습니다.")
+        </SCRIPT>
+      </h3>
+      <!-- <img src="./images/balloon.png" alt="" class="image" style="display: none;"> -->
     </div>
   </nav>
 

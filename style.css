@@ -35,7 +35,7 @@
 }
 body {
   font-family: 'Yeon Sung', cursive;
-  background-color:var(--color-light-white);
+  background-color:white;
 }
 
 #label-container{
@@ -112,7 +112,9 @@ body {
   
   
 }
-
+.counter img{
+  width: 20px;
+}
 
 .image-upload-wrap {
   position: relative;
