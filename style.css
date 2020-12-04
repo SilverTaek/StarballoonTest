@@ -38,6 +38,15 @@ body {
   background-color:white;
 }
 
+
+.count{
+  font-size: var(--font-small);
+    text-decoration: none;
+    color: var(--color-pink);
+  text-align: center;
+  margin:auto;
+}
+
 #label-container{
   font-size: var(--font-small);
   color: var(--color-light-grey);
